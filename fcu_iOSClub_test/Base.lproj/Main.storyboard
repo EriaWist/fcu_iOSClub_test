@@ -1,24 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="loginViewController" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a0a9000933bf029cd093" translatesAutoresizingMaskIntoConstraints="NO" id="koO-lJ-edK">
+                                <rect key="frame" x="-113" y="-17" width="640" height="936"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVN-49-rKv">
+                                <rect key="frame" x="83" y="326" width="248" height="244"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帳號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZt-qS-cbd">
+                                        <rect key="frame" x="38" y="28" width="35" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密碼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiY-hi-m7b">
+                                        <rect key="frame" x="38" y="89" width="35" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGT-Of-70u">
+                                        <rect key="frame" x="96" y="21" width="142" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="vaX-tc-W2d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="032-AD-jye">
+                                        <rect key="frame" x="96" y="77" width="144" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BgD-y8-iGx">
+                                        <rect key="frame" x="97" y="170" width="54" height="34"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="登入">
+                                            <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tiY-hi-m7b" firstAttribute="leading" secondItem="eVN-49-rKv" secondAttribute="leading" constant="38" id="9Aw-db-5tV"/>
+                                    <constraint firstAttribute="width" constant="248" id="Bey-JR-bE8"/>
+                                    <constraint firstItem="032-AD-jye" firstAttribute="bottom" secondItem="tiY-hi-m7b" secondAttribute="bottom" id="EX5-hb-7cg"/>
+                                    <constraint firstItem="BgD-y8-iGx" firstAttribute="top" secondItem="032-AD-jye" secondAttribute="bottom" constant="59" id="Eos-PQ-mzx"/>
+                                    <constraint firstItem="HGT-Of-70u" firstAttribute="top" secondItem="eVN-49-rKv" secondAttribute="top" constant="21" id="F2o-QI-HRY"/>
+                                    <constraint firstAttribute="trailing" secondItem="BgD-y8-iGx" secondAttribute="trailing" constant="97" id="GLx-61-AvE"/>
+                                    <constraint firstAttribute="trailing" secondItem="032-AD-jye" secondAttribute="trailing" constant="8" id="R5B-UD-Vhu"/>
+                                    <constraint firstItem="HGT-Of-70u" firstAttribute="centerY" secondItem="hZt-qS-cbd" secondAttribute="centerY" id="Rk1-5M-gqB"/>
+                                    <constraint firstItem="032-AD-jye" firstAttribute="top" secondItem="HGT-Of-70u" secondAttribute="bottom" constant="22" id="TqR-mD-kYV"/>
+                                    <constraint firstItem="HGT-Of-70u" firstAttribute="leading" secondItem="hZt-qS-cbd" secondAttribute="trailing" constant="23" id="UvS-j6-LzQ"/>
+                                    <constraint firstItem="BgD-y8-iGx" firstAttribute="leading" secondItem="eVN-49-rKv" secondAttribute="leading" constant="97" id="Wlg-PY-LvZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="HGT-Of-70u" secondAttribute="trailing" constant="10" id="XpC-Yd-OPs"/>
+                                    <constraint firstAttribute="height" constant="244" id="bso-iZ-pk7"/>
+                                    <constraint firstItem="hZt-qS-cbd" firstAttribute="leading" secondItem="eVN-49-rKv" secondAttribute="leading" constant="38" id="dH9-n2-6gd"/>
+                                    <constraint firstItem="032-AD-jye" firstAttribute="leading" secondItem="tiY-hi-m7b" secondAttribute="trailing" constant="23" id="lfp-99-Uye"/>
+                                    <constraint firstItem="hZt-qS-cbd" firstAttribute="top" secondItem="eVN-49-rKv" secondAttribute="top" constant="28" id="sOU-IK-dHX"/>
+                                    <constraint firstItem="tiY-hi-m7b" firstAttribute="top" secondItem="hZt-qS-cbd" secondAttribute="bottom" constant="41" id="vGA-Z0-KVr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="10"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eVN-49-rKv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8cu-d6-s38"/>
+                            <constraint firstItem="eVN-49-rKv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SH2-n7-bEw"/>
+                            <constraint firstItem="eVN-49-rKv" firstAttribute="centerX" secondItem="koO-lJ-edK" secondAttribute="centerX" id="Vwl-OU-GmE"/>
+                            <constraint firstItem="koO-lJ-edK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-61" id="Yh3-2y-s3X"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="koO-lJ-edK" secondAttribute="bottom" constant="-57" id="mQ1-FY-Goc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="a0a9000933bf029cd093" width="640" height="1316"/>
+    </resources>
 </document>

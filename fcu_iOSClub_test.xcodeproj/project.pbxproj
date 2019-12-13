@@ -15,6 +15,7 @@
 		76A2E45223A3CEAF001D997E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A2E45023A3CEAF001D997E /* LaunchScreen.storyboard */; };
 		76A2E45D23A3CEAF001D997E /* fcu_iOSClub_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E45C23A3CEAF001D997E /* fcu_iOSClub_testTests.swift */; };
 		76A2E46823A3CEAF001D997E /* fcu_iOSClub_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E46723A3CEAF001D997E /* fcu_iOSClub_testUITests.swift */; };
+		76A2E47623A3D1DD001D997E /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E47523A3D1DD001D997E /* loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		76A2E46323A3CEAF001D997E /* fcu_iOSClub_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fcu_iOSClub_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A2E46723A3CEAF001D997E /* fcu_iOSClub_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fcu_iOSClub_testUITests.swift; sourceTree = "<group>"; };
 		76A2E46923A3CEAF001D997E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76A2E47523A3D1DD001D997E /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				76A2E44E23A3CEAF001D997E /* Assets.xcassets */,
 				76A2E45023A3CEAF001D997E /* LaunchScreen.storyboard */,
 				76A2E45323A3CEAF001D997E /* Info.plist */,
+				76A2E47523A3D1DD001D997E /* loginViewController.swift */,
 			);
 			path = fcu_iOSClub_test;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A2E47623A3D1DD001D997E /* loginViewController.swift in Sources */,
 				76A2E44A23A3CEA5001D997E /* ViewController.swift in Sources */,
 				76A2E44623A3CEA5001D997E /* AppDelegate.swift in Sources */,
 				76A2E44823A3CEA5001D997E /* SceneDelegate.swift in Sources */,
