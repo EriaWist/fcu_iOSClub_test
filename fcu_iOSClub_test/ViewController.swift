@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         // Do any additional setup after loading the view.
-    }
+        let lginVC:UIViewController = ((storyboard?.instantiateViewController(withIdentifier: "loginID"))!)
+        show(lginVC, sender: nil)
+        //present(lginVC, animated: false, completion: nil)
+    print("test")
 
 
 }
 
+}

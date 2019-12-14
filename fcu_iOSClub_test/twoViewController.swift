@@ -1,29 +1,24 @@
 //
-//  loginViewController.swift
+//  twoViewController.swift
 //  fcu_iOSClub_test
 //
-//  Created by 阿騰 on 2019/12/13.
+//  Created by 阿騰 on 2019/12/14.
 //  Copyright © 2019 阿騰. All rights reserved.
 //
 
 import UIKit
 
-class loginViewController: UIViewController {
-    @IBOutlet weak var uese_input: UITextField! //帳號
-    
-    @IBOutlet weak var pws_input: UITextField!//密碼
-    @IBAction func login_Button(_ sender: Any)/*登入按鈕按下之後*/ {
-        if let vc: UIViewController = storyboard?.instantiateViewController(withIdentifier: "ViewController"){
-            //custom
-            //present(vc, animated: false, completion: nil)
-        }
+class twoViewController: UIViewController {
+    @IBAction func back(_ sender: Any) {
     }
+    @IBAction func go(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
-
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-         
-        }
     }
     
 
@@ -37,4 +32,4 @@ class loginViewController: UIViewController {
     }
     */
 
-
+}
