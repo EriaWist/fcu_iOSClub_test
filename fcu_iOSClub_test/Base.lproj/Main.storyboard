@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Gb-r2-ply">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tZt-PR-E0F">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -109,7 +109,7 @@
             </objects>
             <point key="canvasLocation" x="-28" y="74"/>
         </scene>
-        <!--View Controller-->
+        <!--home-->
         <scene sceneID="o7n-om-lXw">
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Gb-r2-ply" customClass="ViewController" customModule="fcu_iOSClub_test" sceneMemberID="viewController">
@@ -140,13 +140,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="THg-YB-fI4"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="home" selectedImage="house" catalog="system" id="dOO-Z5-iuv"/>
                     <navigationItem key="navigationItem" id="HKv-nv-YJC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOz-dm-xsr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="830" y="74"/>
+            <point key="canvasLocation" x="1813" y="-144"/>
         </scene>
-        <!--Two View Controller-->
+        <!--Item-->
         <scene sceneID="Ksg-uC-6ef">
             <objects>
                 <viewController id="Lbb-78-mcg" customClass="twoViewController" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
@@ -174,14 +175,39 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="NQl-6b-Jnj"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2li-ym-OcV"/>
                     <navigationItem key="navigationItem" id="JZN-jl-NiG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4E7-or-GtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1619" y="74"/>
+            <point key="canvasLocation" x="1814" y="559"/>
+        </scene>
+        <!--Tab Bar switch-->
+        <scene sceneID="1Iw-t0-13y">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tZt-PR-E0F" customClass="TabBar_switch" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="bar" id="cFd-pu-D2G">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="barTintColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tab_bar" destination="cFd-pu-D2G" id="PcW-G4-inP"/>
+                        <segue destination="6Gb-r2-ply" kind="relationship" relationship="viewControllers" id="fWC-1j-RK5"/>
+                        <segue destination="Lbb-78-mcg" kind="relationship" relationship="viewControllers" id="vGX-Cl-ON4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mja-uN-66R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.98550724637687" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>
         <image name="a0a9000933bf029cd093" width="640" height="1316"/>
+        <image name="bar" width="531" height="131"/>
+        <image name="house" catalog="system" width="64" height="54"/>
     </resources>
 </document>
