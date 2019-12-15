@@ -28,7 +28,7 @@ class loginViewController: UIViewController {
         UserDefaults.standard.set(true, forKey: "switch")
         //UserDefaults.removeObject("switch")
         print(UserDefaults.standard.object(forKey: "switch") as! Bool)
-        if let homevc = storyboard?.instantiateViewController(withIdentifier: "TabBar_switch")
+        if let homevc = storyboard?.instantiateViewController(withIdentifier: "ViewController")
         {
             show(homevc, sender: nil)
         }

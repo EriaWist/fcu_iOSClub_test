@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		766F906623A4D0AD0007E740 /* twoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F906523A4D0AD0007E740 /* twoViewController.swift */; };
-		766F906C23A533780007E740 /* TabBar_switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766F906B23A533780007E740 /* TabBar_switch.swift */; };
+		7687BCB123A61AB1008DC8E9 /* viewDidLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */; };
 		76A2E44623A3CEA5001D997E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44523A3CEA5001D997E /* AppDelegate.swift */; };
 		76A2E44823A3CEA5001D997E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44723A3CEA5001D997E /* SceneDelegate.swift */; };
 		76A2E44A23A3CEA5001D997E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44923A3CEA5001D997E /* ViewController.swift */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		766F906523A4D0AD0007E740 /* twoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twoViewController.swift; sourceTree = "<group>"; };
-		766F906B23A533780007E740 /* TabBar_switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar_switch.swift; sourceTree = "<group>"; };
+		7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDidLoadViewController.swift; sourceTree = "<group>"; };
 		76A2E44223A3CEA5001D997E /* fcu_iOSClub_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fcu_iOSClub_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A2E44523A3CEA5001D997E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A2E44723A3CEA5001D997E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 				76A2E45323A3CEAF001D997E /* Info.plist */,
 				76A2E47523A3D1DD001D997E /* loginViewController.swift */,
 				766F906523A4D0AD0007E740 /* twoViewController.swift */,
-				766F906B23A533780007E740 /* TabBar_switch.swift */,
+				7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */,
 			);
 			path = fcu_iOSClub_test;
 			sourceTree = "<group>";
@@ -245,7 +245,7 @@
 				76A2E47623A3D1DD001D997E /* loginViewController.swift in Sources */,
 				76A2E44A23A3CEA5001D997E /* ViewController.swift in Sources */,
 				76A2E44623A3CEA5001D997E /* AppDelegate.swift in Sources */,
-				766F906C23A533780007E740 /* TabBar_switch.swift in Sources */,
+				7687BCB123A61AB1008DC8E9 /* viewDidLoadViewController.swift in Sources */,
 				766F906623A4D0AD0007E740 /* twoViewController.swift in Sources */,
 				76A2E44823A3CEA5001D997E /* SceneDelegate.swift in Sources */,
 			);
