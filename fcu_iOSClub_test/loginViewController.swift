@@ -12,7 +12,8 @@ class loginViewController: UIViewController {
     
     @IBOutlet weak var pws_input: UITextField!//密碼
     @IBAction func login_Button(_ sender: Any)/*登入按鈕按下之後*/ {
-       
+        login_fall()//密碼錯誤
+        
         login_success() //假設密碼正確
     }
     override func viewDidLoad() {
@@ -32,6 +33,12 @@ class loginViewController: UIViewController {
         {
             show(homevc, sender: nil)
         }
+    }
+    func login_fall() {
+            let controller = UIAlertController(title: "密碼錯誤", message: "請重新輸入", preferredStyle: .alert)
+              let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+              controller.addAction(okAction)
+              present(controller, animated: true, completion: nil)
     }
     }
     
