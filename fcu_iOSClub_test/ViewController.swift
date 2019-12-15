@@ -13,8 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var set_button: UIButton!
     @IBOutlet weak var hid_view: UIView!
     @IBAction func login(_ sender: Any) {
-        let lginVC:UIViewController = ((storyboard?.instantiateViewController(withIdentifier: "loginID"))!)
-        show(lginVC, sender: nil)
+       login_fale()
     }
     
     override func viewDidLoad() {

@@ -113,7 +113,7 @@
         <!--home-->
         <scene sceneID="o7n-om-lXw">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Gb-r2-ply" customClass="ViewController" customModule="fcu_iOSClub_test" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Gb-r2-ply" customClass="ViewController" customModule="fcu_iOSClub_test" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jm0-8O-SLY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4E7-or-GtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756.521739130435" y="63.616071428571423"/>
+            <point key="canvasLocation" x="2049" y="554"/>
         </scene>
         <!--home-->
         <scene sceneID="HXc-ui-NgI">
@@ -239,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIR-pS-Iso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2490" y="48"/>
+            <point key="canvasLocation" x="909" y="-635"/>
         </scene>
     </scenes>
     <resources>
