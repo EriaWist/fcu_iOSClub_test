@@ -10,7 +10,6 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="loginID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="loginViewController" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -107,6 +106,7 @@
                         <outlet property="uese_input" destination="HGT-Of-70u" id="p7U-Gv-N9s"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-28" y="74"/>
         </scene>
@@ -196,7 +196,7 @@
         <!--Item-->
         <scene sceneID="Ksg-uC-6ef">
             <objects>
-                <viewController storyboardIdentifier="twoViewController" modalPresentationStyle="fullScreen" id="Lbb-78-mcg" customClass="twoViewController" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="twoViewController" id="Lbb-78-mcg" customClass="twoViewController" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ydf-1y-ffA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

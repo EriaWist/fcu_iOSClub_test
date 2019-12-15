@@ -12,8 +12,12 @@ class loginViewController: UIViewController {
     
     @IBOutlet weak var pws_input: UITextField!//密碼
     @IBAction func login_Button(_ sender: Any)/*登入按鈕按下之後*/ {
-        login_fall()//密碼錯誤
+        let user = uese_input.text //帳號
+        let pws = pws_input.text   //密碼
         
+        
+        
+        //login_fall()//密碼錯誤
         login_success() //假設密碼正確
     }
     override func viewDidLoad() {
@@ -28,7 +32,7 @@ class loginViewController: UIViewController {
     func login_success()/*測試內容不需理會 假如想理解可以問幹部*/ {
         UserDefaults.standard.set(true, forKey: "switch")
         //UserDefaults.removeObject("switch")
-        print(UserDefaults.standard.object(forKey: "switch") as! Bool)
+       // print(UserDefaults.standard.object(forKey: "switch") as! Bool)
         if let homevc = storyboard?.instantiateViewController(withIdentifier: "ViewController")
         {
             show(homevc, sender: nil)

@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var set_button: UIButton!
     @IBOutlet weak var hid_view: UIView!
     @IBAction func login(_ sender: Any) {
-       login_fale()
+       login_fail()
     }
     
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            login_fale()
+            login_fail()
         }
         
     }
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         set_lab.text = "登入成功"
         
     }
-    func login_fale() {
+    func login_fail() {
         if let lginVC:UIViewController = storyboard?.instantiateViewController(withIdentifier: "loginID")
         {
             show(lginVC, sender: nil)
