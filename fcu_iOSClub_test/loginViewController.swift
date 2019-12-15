@@ -7,23 +7,32 @@
 //
 
 import UIKit
-
 class loginViewController: UIViewController {
     @IBOutlet weak var uese_input: UITextField! //帳號
     
     @IBOutlet weak var pws_input: UITextField!//密碼
     @IBAction func login_Button(_ sender: Any)/*登入按鈕按下之後*/ {
-        if let vc: UIViewController = storyboard?.instantiateViewController(withIdentifier: "ViewController"){
-            //custom
-            //present(vc, animated: false, completion: nil)
-        }
+       
+        login_success() //假設密碼正確
     }
     override func viewDidLoad() {
 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-         
         }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UserDefaults.standard.set(false, forKey: "switch")
+    }
+    func login_success()/*測試內容不需理會 假如想理解可以問幹部*/ {
+        UserDefaults.standard.set(true, forKey: "switch")
+        //UserDefaults.removeObject("switch")
+        print(UserDefaults.standard.object(forKey: "switch") as! Bool)
+        if let homevc = storyboard?.instantiateViewController(withIdentifier: "TabBar_switch")
+        {
+            show(homevc, sender: nil)
+        }
+    }
     }
     
 

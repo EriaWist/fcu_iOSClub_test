@@ -100,6 +100,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iD6-53-Goo"/>
                     <connections>
                         <outlet property="pws_input" destination="032-AD-jye" id="7dB-ML-phK"/>
                         <outlet property="uese_input" destination="HGT-Of-70u" id="p7U-Gv-N9s"/>
@@ -130,22 +131,66 @@
                                     <constraint firstAttribute="width" constant="640" id="WIW-j5-erW"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10M-nL-c3A">
+                                <rect key="frame" x="70" y="340" width="274" height="216"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登入後繼續" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-UT-bUo">
+                                        <rect key="frame" x="44" y="57" width="187" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="highlightedColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03y-23-89q">
+                                        <rect key="frame" x="111" y="139" width="54" height="34"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="登入">
+                                            <color key="titleColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="login:" destination="6Gb-r2-ply" eventType="touchUpInside" id="YP4-rc-60M"/>
+                                            <action selector="login_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AvK-mj-Ywm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="g6z-UT-bUo" firstAttribute="leading" secondItem="10M-nL-c3A" secondAttribute="leading" constant="44" id="3uC-ce-m4e"/>
+                                    <constraint firstItem="g6z-UT-bUo" firstAttribute="top" secondItem="10M-nL-c3A" secondAttribute="top" constant="57" id="4ar-3X-6ZM"/>
+                                    <constraint firstItem="03y-23-89q" firstAttribute="top" secondItem="g6z-UT-bUo" secondAttribute="bottom" constant="37" id="7f4-O4-hZb"/>
+                                    <constraint firstAttribute="width" constant="274" id="BhV-qL-eF4"/>
+                                    <constraint firstAttribute="bottom" secondItem="03y-23-89q" secondAttribute="bottom" constant="43" id="NXX-c5-jww"/>
+                                    <constraint firstAttribute="trailing" secondItem="g6z-UT-bUo" secondAttribute="trailing" constant="43" id="WRd-sM-WvS"/>
+                                    <constraint firstItem="03y-23-89q" firstAttribute="leading" secondItem="10M-nL-c3A" secondAttribute="leading" constant="111" id="bHl-hz-n7V"/>
+                                    <constraint firstAttribute="trailing" secondItem="03y-23-89q" secondAttribute="trailing" constant="109" id="qSj-Jr-adX"/>
+                                    <constraint firstAttribute="height" constant="216" id="rul-Bv-iT5"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="10M-nL-c3A" firstAttribute="centerY" secondItem="Jm0-8O-SLY" secondAttribute="centerY" id="BdI-dN-Wvj"/>
                             <constraint firstAttribute="trailing" secondItem="Nth-wU-RK0" secondAttribute="trailing" constant="-113" id="GTi-pb-51x"/>
                             <constraint firstAttribute="bottom" secondItem="Nth-wU-RK0" secondAttribute="bottom" constant="-346" id="Pef-O3-9r3"/>
                             <constraint firstItem="Nth-wU-RK0" firstAttribute="top" secondItem="Jm0-8O-SLY" secondAttribute="top" constant="-74" id="jVL-bl-baI"/>
                             <constraint firstItem="Nth-wU-RK0" firstAttribute="leading" secondItem="Jm0-8O-SLY" secondAttribute="leading" constant="-113" id="sfZ-a1-3O5"/>
+                            <constraint firstItem="10M-nL-c3A" firstAttribute="centerX" secondItem="Jm0-8O-SLY" secondAttribute="centerX" id="tzQ-ap-f2f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="THg-YB-fI4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="home" selectedImage="house" catalog="system" id="dOO-Z5-iuv"/>
                     <navigationItem key="navigationItem" id="HKv-nv-YJC"/>
+                    <connections>
+                        <outlet property="hid_view" destination="10M-nL-c3A" id="1Lr-ON-yhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOz-dm-xsr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1813" y="-144"/>
+            <point key="canvasLocation" x="1811.594202898551" y="-144.64285714285714"/>
         </scene>
         <!--Item-->
         <scene sceneID="Ksg-uC-6ef">
@@ -185,9 +230,11 @@
         <!--Tab Bar switch-->
         <scene sceneID="1Iw-t0-13y">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tZt-PR-E0F" customClass="TabBar_switch" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar_switch" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="tZt-PR-E0F" customClass="TabBar_switch" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Bwb-sJ-gX4"/>
                     <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="bar" id="cFd-pu-D2G">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>

@@ -14,10 +14,17 @@ class TabBar_switch: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tab_bar.isHidden = false
+        tab_bar.isHidden = true
         // Do any additional setup after loading the view.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        var sw = UserDefaults.standard.object(forKey: "switch") as! Bool
+        print(sw)
+        if (sw == true) {
+            tab_bar.isHidden = false
+        }
+    }
 
     /*
     // MARK: - Navigation
