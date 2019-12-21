@@ -9,7 +9,8 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    var name:[String]=["11","2"]
+    var id:[String:Int]=["11":0]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,25 +26,26 @@ class TableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         
-        print("test1")
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        print("test2")
-        return 1
+        return name.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print("test3")
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
-        cell.name.text = "aaa"
-        cell.Id.text = "2222"
+        cell.name.text = name[indexPath.row]
+        if let name_id = id[name[indexPath.row]]
+        {
+            cell.Id.text = String(name_id)
+        }
+        
         //cell.imag.image = UIImage(contentsOfFile: "Avatar_0")
         // Configure the cell...
         
