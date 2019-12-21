@@ -182,8 +182,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="login:" destination="6Gb-r2-ply" eventType="touchUpInside" id="ZXU-pe-att"/>
                                             <action selector="login_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hcV-On-OQn"/>
+                                            <segue destination="7oS-ff-Or7" kind="show" id="LtX-Ag-MN9"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看通訊錄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UaR-by-uzd">
@@ -224,8 +224,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="login:" destination="6Gb-r2-ply" eventType="touchUpInside" id="wg3-9A-xKF"/>
                                             <action selector="login_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dzi-w3-yuZ"/>
+                                            <segue destination="Lbb-78-mcg" kind="show" id="t3U-FY-jvr"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成圖像" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glc-wY-QlW">
@@ -284,19 +284,44 @@
         <!--Table View Controller-->
         <scene sceneID="dV7-wg-AgV">
             <objects>
-                <tableViewController id="7oS-ff-Or7" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uMD-Zv-z9C">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <tableViewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="7oS-ff-Or7" customClass="TableViewController" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" id="uMD-Zv-z9C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HRu-dx-dQc">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="122" id="HRu-dx-dQc" customClass="TableViewCell" customModule="fcu_iOSClub_test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="122"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HRu-dx-dQc" id="L2C-1n-pw4">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lID-2p-Kql">
+                                            <rect key="frame" x="145" y="16" width="69" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8d-xt-psc">
+                                            <rect key="frame" x="171" y="63" width="223" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avatar_0" translatesAutoresizingMaskIntoConstraints="NO" id="w50-bV-A2c">
+                                            <rect key="frame" x="11" y="6" width="101" height="101"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Id" destination="C8d-xt-psc" id="53q-TE-xja"/>
+                                    <outlet property="imag" destination="w50-bV-A2c" id="PvW-dk-Tlu"/>
+                                    <outlet property="name" destination="lID-2p-Kql" id="sbz-YQ-gZ6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -304,30 +329,19 @@
                             <outlet property="delegate" destination="7oS-ff-Or7" id="Bvf-Lo-LY1"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="boG-r2-0dq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mYM-cQ-93S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1991" y="-263"/>
+            <point key="canvasLocation" x="1989.8550724637682" y="-263.16964285714283"/>
         </scene>
         <!--Item-->
         <scene sceneID="Ksg-uC-6ef">
             <objects>
-                <viewController storyboardIdentifier="twoViewController" id="Lbb-78-mcg" customClass="twoViewController" customModule="fcu_iOSClub_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="twoViewController" id="Lbb-78-mcg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ydf-1y-ffA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-1A-3CE">
-                                <rect key="frame" x="37" y="66" width="340" height="441"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ac9-Yh-6ro">
-                                <rect key="frame" x="37" y="515" width="340" height="319"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="NQl-6b-Jnj"/>
                     </view>
@@ -371,6 +385,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Avatar_0" width="225" height="225"/>
         <image name="a0a9000933bf029cd093" width="640" height="1316"/>
         <image name="house" catalog="system" width="64" height="54"/>
     </resources>
