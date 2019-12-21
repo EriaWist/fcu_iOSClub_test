@@ -8,12 +8,26 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
-    var name:[String]=["11","2"]
-    var id:[String:Int]=["11":0]
+class test_2_TableViewController: UITableViewController {
+    
+    var name:[String]=["王小明","王大明"] //請設置14筆資料(0到13) 以逗號分隔
+    var id:[String:Int]=["王小明":0700025,"王大明":5567755]//請設置14筆資料 資料內容為[name名稱:學號]
+    
+    
+    var image_Max = 13//圖片最大數 假如添加圖片以 Avatar_第幾張圖 為名稱 考試無須理會 但可以自行添加
+    
+    var imag:[UIImage] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        for i in 0...image_Max {
+            var imagid = "Avatar_"
+            imagid.append(String(i))
+            if UIImage(named: imagid) != nil
+            {
+                imag.append(UIImage(named: imagid)!)
+            }
+            
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -43,10 +57,13 @@ class TableViewController: UITableViewController {
         cell.name.text = name[indexPath.row]
         if let name_id = id[name[indexPath.row]]
         {
-            cell.Id.text = String(name_id)
+            cell.Id.text = "D" + String(name_id)
+        }
+        if imag[indexPath.row] != nil
+        {
+            cell.imag.image = imag[indexPath.row]
         }
         
-        //cell.imag.image = UIImage(contentsOfFile: "Avatar_0")
         // Configure the cell...
         
         

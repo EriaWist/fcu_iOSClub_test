@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class loginViewController: UIViewController {
+class test_1_loginViewController: UIViewController {
     @IBOutlet weak var uese_input: UITextField! //帳號
     
     @IBOutlet weak var pws_input: UITextField!//密碼
@@ -17,7 +17,7 @@ class loginViewController: UIViewController {
         
         
         
-        //login_fall()//密碼錯誤
+        login_fall()//密碼錯誤
         login_success() //假設密碼正確
     }
     override func viewDidLoad() {

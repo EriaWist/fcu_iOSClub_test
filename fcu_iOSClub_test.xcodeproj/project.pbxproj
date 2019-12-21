@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7687BCB123A61AB1008DC8E9 /* viewDidLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */; };
-		76954D6D23ADDF000030C84B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76954D6C23ADDF000030C84B /* TableViewController.swift */; };
+		76954D6D23ADDF000030C84B /* test_2_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76954D6C23ADDF000030C84B /* test_2_TableViewController.swift */; };
 		76954D6F23ADE77B0030C84B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76954D6E23ADE77B0030C84B /* TableViewCell.swift */; };
 		76A2E44623A3CEA5001D997E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44523A3CEA5001D997E /* AppDelegate.swift */; };
 		76A2E44823A3CEA5001D997E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44723A3CEA5001D997E /* SceneDelegate.swift */; };
@@ -16,7 +16,7 @@
 		76A2E44D23A3CEA5001D997E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A2E44B23A3CEA5001D997E /* Main.storyboard */; };
 		76A2E44F23A3CEAF001D997E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A2E44E23A3CEAF001D997E /* Assets.xcassets */; };
 		76A2E45223A3CEAF001D997E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A2E45023A3CEAF001D997E /* LaunchScreen.storyboard */; };
-		76A2E47623A3D1DD001D997E /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E47523A3D1DD001D997E /* loginViewController.swift */; };
+		76A2E47623A3D1DD001D997E /* test_1_loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E47523A3D1DD001D997E /* test_1_loginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDidLoadViewController.swift; sourceTree = "<group>"; };
-		76954D6C23ADDF000030C84B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		76954D6C23ADDF000030C84B /* test_2_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_2_TableViewController.swift; sourceTree = "<group>"; };
 		76954D6E23ADE77B0030C84B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		76A2E44223A3CEA5001D997E /* fcu_iOSClub_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fcu_iOSClub_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A2E44523A3CEA5001D997E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		76A2E45323A3CEAF001D997E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76A2E45823A3CEAF001D997E /* fcu_iOSClub_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fcu_iOSClub_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A2E46323A3CEAF001D997E /* fcu_iOSClub_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fcu_iOSClub_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76A2E47523A3D1DD001D997E /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		76A2E47523A3D1DD001D997E /* test_1_loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_1_loginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +106,9 @@
 				76A2E44E23A3CEAF001D997E /* Assets.xcassets */,
 				76A2E45023A3CEAF001D997E /* LaunchScreen.storyboard */,
 				76A2E45323A3CEAF001D997E /* Info.plist */,
-				76A2E47523A3D1DD001D997E /* loginViewController.swift */,
+				76A2E47523A3D1DD001D997E /* test_1_loginViewController.swift */,
 				7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */,
-				76954D6C23ADDF000030C84B /* TableViewController.swift */,
+				76954D6C23ADDF000030C84B /* test_2_TableViewController.swift */,
 				76954D6E23ADE77B0030C84B /* TableViewCell.swift */,
 			);
 			path = fcu_iOSClub_test;
@@ -245,8 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76A2E47623A3D1DD001D997E /* loginViewController.swift in Sources */,
-				76954D6D23ADDF000030C84B /* TableViewController.swift in Sources */,
+				76A2E47623A3D1DD001D997E /* test_1_loginViewController.swift in Sources */,
+				76954D6D23ADDF000030C84B /* test_2_TableViewController.swift in Sources */,
 				76A2E44A23A3CEA5001D997E /* ViewController.swift in Sources */,
 				76A2E44623A3CEA5001D997E /* AppDelegate.swift in Sources */,
 				7687BCB123A61AB1008DC8E9 /* viewDidLoadViewController.swift in Sources */,
