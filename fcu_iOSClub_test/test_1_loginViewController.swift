@@ -12,13 +12,38 @@ class test_1_loginViewController: UIViewController {
     
     @IBOutlet weak var pws_input: UITextField!//密碼
     @IBAction func login_Button(_ sender: Any)/*登入按鈕按下之後*/ {
-        let user = uese_input.text //帳號
-        let pws = pws_input.text   //密碼
+        var pws:String=" "
+        var user:String=" "
+        if uese_input.text != nil && pws_input.text != nil
+        {
+        user = uese_input.text! //帳號
+        pws = pws_input.text!  //密碼
+        }
+        //帳號資料 user
+        //密碼資料 pws
+        //login_fall()//密碼錯誤
+        //login_success() //假設密碼正確
+        //請用if 完成帳密登入
         
+        demo()
+    }
+    func demo() {
+        var pws:String=" "
+        var user:String=" "
+        if uese_input.text != nil && pws_input.text != nil
+        {
+            user = uese_input.text! //帳號
+             pws = pws_input.text!   //密碼
+        }
         
-        
-        login_fall()//密碼錯誤
-        login_success() //假設密碼正確
+        if user == "iOSClub" && pws == "1234"
+        {
+           login_success()
+        }
+        else
+        {
+            login_fall()
+        }
     }
     override func viewDidLoad() {
 
