@@ -15,22 +15,15 @@ class test_1_loginViewController: UIViewController,UITextFieldDelegate {
         
         
         if let password = password_input.text,let user = user_input.text{
-            if(password=="1234"&&user=="iOSClub")
-            {
-                login_success()
-            }
-            else
-            {
-                login_fall()
-            }
-            //---------------------------------------
-            
+
+            //---完成下方登入--------------------------
             //帳號資料 user
             //密碼資料 pws
-            //login_fall()//密碼錯誤
-            //login_success() //假設密碼正確
+            //login_fall()//當密碼錯誤使用
+            //login_success() //假設密碼正確使用
             //請用if 完成帳密登入
             //---------------------------------------
+            
             print(password+user)
         }else{
             login_fall()
@@ -67,17 +60,7 @@ class test_1_loginViewController: UIViewController,UITextFieldDelegate {
         return false
     }
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 
 
