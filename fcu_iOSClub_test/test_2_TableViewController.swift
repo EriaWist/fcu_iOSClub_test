@@ -57,7 +57,7 @@ class test_2_TableViewController: UITableViewController {
         {
             cell.Id.text = "D" + String(name_id)
         }
-        if imag[indexPath.row] != nil
+        if imag[indexPath.row].imageAsset != nil
         {
             cell.imag.image = imag[indexPath.row]
         }

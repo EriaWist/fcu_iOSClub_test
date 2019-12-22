@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7687BCB123A61AB1008DC8E9 /* viewDidLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */; };
 		76954D6D23ADDF000030C84B /* test_2_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76954D6C23ADDF000030C84B /* test_2_TableViewController.swift */; };
 		76954D6F23ADE77B0030C84B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76954D6E23ADE77B0030C84B /* TableViewCell.swift */; };
+		769BE0F123AFC9ED001BEC73 /* test_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769BE0F023AFC9ED001BEC73 /* test_3_ViewController.swift */; };
 		76A2E44623A3CEA5001D997E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44523A3CEA5001D997E /* AppDelegate.swift */; };
 		76A2E44823A3CEA5001D997E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44723A3CEA5001D997E /* SceneDelegate.swift */; };
 		76A2E44A23A3CEA5001D997E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A2E44923A3CEA5001D997E /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewDidLoadViewController.swift; sourceTree = "<group>"; };
 		76954D6C23ADDF000030C84B /* test_2_TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_2_TableViewController.swift; sourceTree = "<group>"; };
 		76954D6E23ADE77B0030C84B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		769BE0F023AFC9ED001BEC73 /* test_3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_3_ViewController.swift; sourceTree = "<group>"; };
 		76A2E44223A3CEA5001D997E /* fcu_iOSClub_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fcu_iOSClub_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A2E44523A3CEA5001D997E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A2E44723A3CEA5001D997E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				7687BCB023A61AB1008DC8E9 /* viewDidLoadViewController.swift */,
 				76954D6C23ADDF000030C84B /* test_2_TableViewController.swift */,
 				76954D6E23ADE77B0030C84B /* TableViewCell.swift */,
+				769BE0F023AFC9ED001BEC73 /* test_3_ViewController.swift */,
 			);
 			path = fcu_iOSClub_test;
 			sourceTree = "<group>";
@@ -194,7 +197,7 @@
 				};
 			};
 			buildConfigurationList = 76A2E43D23A3CEA5001D997E /* Build configuration list for PBXProject "fcu_iOSClub_test" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -251,6 +254,7 @@
 				76A2E44623A3CEA5001D997E /* AppDelegate.swift in Sources */,
 				7687BCB123A61AB1008DC8E9 /* viewDidLoadViewController.swift in Sources */,
 				76954D6F23ADE77B0030C84B /* TableViewCell.swift in Sources */,
+				769BE0F123AFC9ED001BEC73 /* test_3_ViewController.swift in Sources */,
 				76A2E44823A3CEA5001D997E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +429,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y824H4WT8;
 				INFOPLIST_FILE = fcu_iOSClub_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,6 +448,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7Y824H4WT8;
 				INFOPLIST_FILE = fcu_iOSClub_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

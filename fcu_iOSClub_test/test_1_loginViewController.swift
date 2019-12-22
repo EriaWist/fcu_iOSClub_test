@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class test_1_loginViewController: UIViewController {
+class test_1_loginViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var user_input: UITextField! //帳號
     
     @IBOutlet weak var password_input: UITextField!//密碼
@@ -15,13 +15,23 @@ class test_1_loginViewController: UIViewController {
         
         
         if let password = password_input.text,let user = user_input.text{
-            //---------
-
+            if(password=="1234"&&user=="iOSClub")
+            {
+                login_success()
+            }
+            else
+            {
+                login_fall()
+            }
+            //---------------------------------------
+            
             //帳號資料 user
             //密碼資料 pws
             //login_fall()//密碼錯誤
             //login_success() //假設密碼正確
             //請用if 完成帳密登入
+            //---------------------------------------
+            print(password+user)
         }else{
             login_fall()
         }
@@ -30,6 +40,8 @@ class test_1_loginViewController: UIViewController {
 
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.password_input.delegate=self
+        self.user_input.delegate=self
         }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -49,6 +61,10 @@ class test_1_loginViewController: UIViewController {
               let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
               controller.addAction(okAction)
               present(controller, animated: true, completion: nil)
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     }
     
