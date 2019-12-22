@@ -11,10 +11,10 @@ import UIKit
 class test_2_TableViewController: UITableViewController {
     var name:[String]=["王小明","王大明","周智偉", "翁美惠", "林淑玲", "葉惠玲", "姚雪男", "張伶維", "高佑琴", "張欣宜", "郭原勇", "蔡嘉琦", "陳思穎"]
     var id:[String:Int]=["王小明":2324421,"王大明":5307879,"周智偉":3663826, "翁美惠":9968401, "林淑玲":3799682, "葉惠玲":9426840, "姚雪男":1975317, "張伶維":7535013, "高佑琴":6625371, "張欣宜":3560504, "郭原勇":1421844, "蔡嘉琦":8243302, "陳思穎":5903388]
-  //  var name:[String]=["王小明","王大明"] //請設置14筆資料(0到13) 以逗號分隔
-    
-   // var id:[String:Int]=["王小明":0700025,"王大明":5567755]//請設置14筆資料 資料內容為[name名稱:學號(數字部分)]
-    
+//    var name:[String]=["王小明"] //請設置14筆資料(0到13) 以逗號分隔
+//
+//    var id:[String:Int]=["王小明":0700025]//請設置14筆資料 資料內容為[name名稱:學號(數字部分)]
+//
     
     var image_Max = 13//圖片最大數 假如添加圖片以 Avatar_第幾張圖 為名稱 考試無須理會 但可以自行添加
     
@@ -30,14 +30,10 @@ class test_2_TableViewController: UITableViewController {
             }
             
         }
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
-    // MARK: - Table view data source
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

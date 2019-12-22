@@ -8,40 +8,21 @@
 
 import UIKit
 class test_1_loginViewController: UIViewController {
-    @IBOutlet weak var uese_input: UITextField! //帳號
+    @IBOutlet weak var user_input: UITextField! //帳號
     
-    @IBOutlet weak var pws_input: UITextField!//密碼
+    @IBOutlet weak var password_input: UITextField!//密碼
     @IBAction func login_Button(_ sender: Any)/*登入按鈕按下之後*/ {
-        var pws:String=" "
-        var user:String=" "
-        if uese_input.text != nil && pws_input.text != nil
-        {
-        user = uese_input.text! //帳號
-        pws = pws_input.text!  //密碼
-        }
-        //帳號資料 user
-        //密碼資料 pws
-        //login_fall()//密碼錯誤
-        //login_success() //假設密碼正確
-        //請用if 完成帳密登入
         
-        demo()
-    }
-    func demo() {
-        var pws:String=" "
-        var user:String=" "
-        if uese_input.text != nil && pws_input.text != nil
-        {
-            user = uese_input.text! //帳號
-             pws = pws_input.text!   //密碼
-        }
         
-        if user == "iOSClub" && pws == "1234"
-        {
-           login_success()
-        }
-        else
-        {
+        if let password = password_input.text,let user = user_input.text{
+            //---------
+
+            //帳號資料 user
+            //密碼資料 pws
+            //login_fall()//密碼錯誤
+            //login_success() //假設密碼正確
+            //請用if 完成帳密登入
+        }else{
             login_fall()
         }
     }
@@ -81,5 +62,6 @@ class test_1_loginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 
