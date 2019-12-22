@@ -331,6 +331,7 @@
                                     <outlet property="Id" destination="C8d-xt-psc" id="53q-TE-xja"/>
                                     <outlet property="imag" destination="w50-bV-A2c" id="PvW-dk-Tlu"/>
                                     <outlet property="name" destination="lID-2p-Kql" id="sbz-YQ-gZ6"/>
+                                    <segue destination="6Gb-r2-ply" kind="show" id="zwX-YX-g37"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -352,7 +353,34 @@
                     <view key="view" contentMode="scaleToFill" id="Ydf-1y-ffA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gL7-9z-wY3">
+                                <rect key="frame" x="16" y="20" width="54" height="34"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="54" id="xpM-LT-BDx"/>
+                                </constraints>
+                                <state key="normal" title="返回">
+                                    <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="login_Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rtg-EX-cKU"/>
+                                    <segue destination="6Gb-r2-ply" kind="show" id="59b-Jo-iaQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gL7-9z-wY3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ydf-1y-ffA" secondAttribute="leadingMargin" id="c9W-9V-WXR"/>
+                            <constraint firstItem="NQl-6b-Jnj" firstAttribute="trailing" secondItem="gL7-9z-wY3" secondAttribute="trailing" constant="305" id="p5a-h7-tEC"/>
+                            <constraint firstItem="gL7-9z-wY3" firstAttribute="top" secondItem="NQl-6b-Jnj" secondAttribute="top" constant="20" id="tuV-Gb-RBd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NQl-6b-Jnj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="2li-ym-OcV"/>
@@ -398,4 +426,7 @@
         <image name="a0a9000933bf029cd093" width="640" height="1316"/>
         <image name="house" catalog="system" width="64" height="54"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="59b-Jo-iaQ"/>
+    </inferredMetricsTieBreakers>
 </document>

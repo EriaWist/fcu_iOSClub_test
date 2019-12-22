@@ -26,7 +26,7 @@ class test_3_ViewController: UIViewController {
                     {
                         butle.backgroundColor = .blue
                     }
-                    butle.frame = CGRect(x: 23+i*50, y: 10+j*50, width: 30, height: 30)
+                    butle.frame = CGRect(x: 23+i*50, y: 70+j*50, width: 30, height: 30)
                     self.view.addSubview(butle)
                 }
             }
