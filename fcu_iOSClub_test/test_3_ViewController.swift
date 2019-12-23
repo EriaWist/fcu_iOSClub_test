@@ -13,9 +13,9 @@ class test_3_ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            for i in 0...6
+            for i in 0...0//更改for完成圖型
             {
-                for j in 0...12
+                for j in 0...0//更改for完成圖型
                 {
                     let butle = UIView()
                     if (i == 3 || j == 3 || j == 2 || i==4)
@@ -30,18 +30,9 @@ class test_3_ViewController: UIViewController {
                     self.view.addSubview(butle)
                 }
             }
-        // Do any additional setup after loading the view.
+       
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
